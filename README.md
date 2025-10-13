@@ -6,9 +6,13 @@
 # Что произошло?
 
 РКН начал агрессивную блокировку нестандартных http портов, стандартные http порты которые не блокируются: `80`, `81`, `8080`, `443`, `8443`
-Также РКН начал активнее блокировать легкозасекаемые VPN протоколы.
+Также РКН начал активнее блокировать легкозасекаемые VPN протоколы и некоторые SNI/Dest
 
 # Оглавление
+
+[Инструкция по смене SNI в 3x-ui панели]
+
+[Инструкция по смене SNI в Marzban панели]
 
 [У меня перестал работать WireGuard](https://github.com/YukiKras/russia-vpn#%D1%83-%D0%BC%D0%B5%D0%BD%D1%8F-%D0%BF%D0%B5%D1%80%D0%B5%D1%81%D1%82%D0%B0%D0%BB-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%D1%82%D1%8C-wireguard)
 
@@ -27,6 +31,58 @@
 [Как сменить порт в Marzban панели?](https://github.com/YukiKras/russia-vpn#%D0%BA%D0%B0%D0%BA-%D1%81%D0%BC%D0%B5%D0%BD%D0%B8%D1%82%D1%8C-%D0%BF%D0%BE%D1%80%D1%82-%D0%B2-marzban-%D0%BF%D0%B0%D0%BD%D0%B5%D0%BB%D0%B8)
 
 [У меня перестал работать TorrServer](https://github.com/YukiKras/russia-vpn#%D1%83-%D0%BC%D0%B5%D0%BD%D1%8F-%D0%BF%D0%B5%D1%80%D0%B5%D1%81%D1%82%D0%B0%D0%BB-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%D1%82%D1%8C-torrserver)
+
+# Инструкция по смене SNI/Dest в 3x-ui панели
+
+Для этого войдите в 3x-ui панель по инструкциям из [wiki.aeza.net](https://wiki.aeza.net/aezawiki/razvertyvanie-proksi-protokola-vless-s-pomoshyu-3x-ui#id-2.-vkhod-v-panel-3x-ui-i-sozdanie-klyucha-polzovatelya), далее перейдите во вкладку "Инбаунды" или если у вас старая панель 3x-ui во вкладку "Подключения"
+
+<img width="1920" height="397" alt="waterfox_Nb8VT3xTfv" src="https://github.com/user-attachments/assets/720b8281-9158-4b26-ae5f-af2b6e9a9e06" />
+
+Далее нажмите на троеточее и кнопку изменения
+
+<img width="1920" height="676" alt="waterfox_7RkwyxAApN" src="https://github.com/user-attachments/assets/6498a722-dfdd-4508-bde7-9e975d9b354c" />
+
+<img width="348" height="465" alt="waterfox_wm48c0K53W" src="https://github.com/user-attachments/assets/e4b2904a-5737-482b-b332-d9877237863c" />
+
+Далее вам нужно тут заменить SNI и Target (Dest) из этого списка: [Список SNI/Dest](https://kmi.aeza.net/sAXAZ6CzAH)
+
+<img width="401" height="915" alt="waterfox_QcCuWJZ5G8" src="https://github.com/user-attachments/assets/930a0c61-36fa-41e6-b0d7-8afc93a03beb" />
+
+> [!WARNING]  
+> В Target (или в Dest) всегда прописывайте :443 на конце, без пробелов
+
+После этого сохраните изменения:
+
+<img width="408" height="916" alt="waterfox_IyWnxJDwSV" src="https://github.com/user-attachments/assets/73acf5a4-925c-4c12-b3b4-3cece77c3470" />
+
+Если вы не настраивали подписку то вам необходимо будет скопировать Vless ключ и обновить его в вашем прокси клиенте, ниже показаны скриншоты как скопировать Vless ключ, с инструкциями по настройки прокси клиентов вы можете ознакомиться тут: https://wiki.yukikras.net/ru/nastroikavpn
+
+<img width="645" height="474" alt="waterfox_I5x66l6KZJ" src="https://github.com/user-attachments/assets/26307247-8e1c-418b-a249-b1c5328c3918" />
+
+<img width="614" height="926" alt="waterfox_lYUS1xxLJY" src="https://github.com/user-attachments/assets/8fbd4389-e942-4e00-a72f-83c9a7e57482" />
+
+> [!IMPORTANT]  
+> Если не заработало то попробуйте вписать другой SNI/Dest из [этого списка](https://kmi.aeza.net/sAXAZ6CzAH)
+
+# Инструкция по смене SNI/Dest в Marzban панели
+
+Для этого войдите в Marzban панель по инструкциям из [wiki.aeza.net](https://wiki.aeza.net/aezawiki/razvertyvanie-proksi-protokola-vless-s-pomoshyu-marzban#id-2.1-vkhod-v-panel-cherez-ssh-tunnel), далее перейдите в настройки
+
+<img width="1920" height="532" alt="waterfox_tBRXjqHzSB" src="https://github.com/user-attachments/assets/d49e03fb-c34b-4ff4-8b76-65236841b206" />
+
+Далее вам нужно тут заменить SNI и Dest из этого списка: [Список SNI/Dest](https://kmi.aeza.net/sAXAZ6CzAH) и **сохранить изменения**
+
+> [!WARNING]  
+> В Target (или в Dest) всегда прописывайте :443 на конце, без пробелов
+
+<img width="961" height="927" alt="waterfox_CE2fjpOcxe" src="https://github.com/user-attachments/assets/2428c84b-033b-4abe-8a06-5d792a394359" />
+
+Если вы не настраивали подписку то вам необходимо будет скопировать Vless ключ и обновить его в вашем прокси клиенте, ниже показан скриншот как скопировать Vless ключ, с инструкциями по настройки прокси клиентов вы можете ознакомиться тут: https://wiki.yukikras.net/ru/nastroikavpn
+
+<img width="1920" height="534" alt="waterfox_3EGujOwrBP" src="https://github.com/user-attachments/assets/651da8bf-3b7a-40df-995d-8d41d390ecbc" />
+
+> [!IMPORTANT]  
+> Если не заработало то попробуйте вписать другой SNI/Dest из [этого списка](https://kmi.aeza.net/sAXAZ6CzAH)
 
 # У меня перестал работать WireGuard
 
