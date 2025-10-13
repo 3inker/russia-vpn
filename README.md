@@ -46,14 +46,14 @@
 
 Далее вам нужно тут заменить SNI и Target (Dest) из этого списка: [Список SNI/Dest](https://kmi.aeza.net/sAXAZ6CzAH)
 
-<img width="401" height="915" alt="waterfox_QcCuWJZ5G8" src="https://github.com/user-attachments/assets/930a0c61-36fa-41e6-b0d7-8afc93a03beb" />
+<img width="396" height="913" alt="waterfox_cM4oEt0zXZ" src="https://github.com/user-attachments/assets/55e4cd01-9cef-4e4f-9554-d10a31ad526f" />
 
 > [!WARNING]  
 > В Target (или в Dest) всегда прописывайте :443 на конце, без пробелов
 
 После этого сохраните изменения:
 
-<img width="408" height="916" alt="waterfox_IyWnxJDwSV" src="https://github.com/user-attachments/assets/73acf5a4-925c-4c12-b3b4-3cece77c3470" />
+<img width="406" height="913" alt="waterfox_mhoqBJw3Ba" src="https://github.com/user-attachments/assets/fc99ebe6-1300-4bc6-9472-e7d783d4b4ba" />
 
 Если вы не настраивали подписку то вам необходимо будет скопировать Vless ключ и обновить его в вашем прокси клиенте, ниже показаны скриншоты как скопировать Vless ключ, с инструкциями по настройки прокси клиентов вы можете ознакомиться тут: https://wiki.yukikras.net/ru/nastroikavpn
 
