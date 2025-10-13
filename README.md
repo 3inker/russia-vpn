@@ -10,9 +10,9 @@
 
 # Оглавление
 
-[Инструкция по смене SNI в 3x-ui панели]
+[Инструкция по смене SNI в 3x-ui панели](https://github.com/YukiKras/russia-vpn#%D0%B8%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%86%D0%B8%D1%8F-%D0%BF%D0%BE-%D1%81%D0%BC%D0%B5%D0%BD%D0%B5-snidest-%D0%B2-3x-ui-%D0%BF%D0%B0%D0%BD%D0%B5%D0%BB%D0%B8)
 
-[Инструкция по смене SNI в Marzban панели]
+[Инструкция по смене SNI в Marzban панели](https://github.com/YukiKras/russia-vpn#%D0%B8%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%86%D0%B8%D1%8F-%D0%BF%D0%BE-%D1%81%D0%BC%D0%B5%D0%BD%D0%B5-snidest-%D0%B2-marzban-%D0%BF%D0%B0%D0%BD%D0%B5%D0%BB%D0%B8)
 
 [У меня перестал работать WireGuard](https://github.com/YukiKras/russia-vpn#%D1%83-%D0%BC%D0%B5%D0%BD%D1%8F-%D0%BF%D0%B5%D1%80%D0%B5%D1%81%D1%82%D0%B0%D0%BB-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%D1%82%D1%8C-wireguard)
 
