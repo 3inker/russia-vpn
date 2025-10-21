@@ -44,7 +44,7 @@
 
 <img width="348" height="465" alt="waterfox_wm48c0K53W" src="https://github.com/user-attachments/assets/e4b2904a-5737-482b-b332-d9877237863c" />
 
-Далее вам нужно тут заменить SNI и Target (Dest) из этого списка: [Список SNI/Dest](https://kmi.aeza.net/sAXAZ6CzAH)
+Далее вам нужно тут заменить SNI и Target (Dest) из этого списка: [Список SNI/Dest](https://github.com/hxehex/russia-mobile-internet-whitelist/blob/main/whitelist.txt)
 
 <img width="396" height="913" alt="waterfox_cM4oEt0zXZ" src="https://github.com/user-attachments/assets/55e4cd01-9cef-4e4f-9554-d10a31ad526f" />
 
@@ -62,7 +62,7 @@
 <img width="614" height="926" alt="waterfox_lYUS1xxLJY" src="https://github.com/user-attachments/assets/8fbd4389-e942-4e00-a72f-83c9a7e57482" />
 
 > [!IMPORTANT]  
-> Если не заработало то попробуйте вписать другой SNI/Dest из [этого списка](https://kmi.aeza.net/sAXAZ6CzAH)
+> Если не заработало то попробуйте вписать другой SNI/Dest из [этого списка](https://github.com/hxehex/russia-mobile-internet-whitelist/blob/main/whitelist.txt)
 
 # Инструкция по смене SNI/Dest в Marzban панели
 
@@ -70,7 +70,7 @@
 
 <img width="1920" height="532" alt="waterfox_tBRXjqHzSB" src="https://github.com/user-attachments/assets/d49e03fb-c34b-4ff4-8b76-65236841b206" />
 
-Далее вам нужно тут заменить SNI и Dest из этого списка: [Список SNI/Dest](https://kmi.aeza.net/sAXAZ6CzAH) и **сохранить изменения**
+Далее вам нужно тут заменить SNI и Dest из этого списка: [Список SNI/Dest](https://github.com/hxehex/russia-mobile-internet-whitelist/blob/main/whitelist.txt) и **сохранить изменения**
 
 > [!WARNING]  
 > В Target (или в Dest) всегда прописывайте :443 на конце, без пробелов
@@ -82,7 +82,7 @@
 <img width="1920" height="534" alt="waterfox_3EGujOwrBP" src="https://github.com/user-attachments/assets/651da8bf-3b7a-40df-995d-8d41d390ecbc" />
 
 > [!IMPORTANT]  
-> Если не заработало то попробуйте вписать другой SNI/Dest из [этого списка](https://kmi.aeza.net/sAXAZ6CzAH)
+> Если не заработало то попробуйте вписать другой SNI/Dest из [этого списка](https://github.com/hxehex/russia-mobile-internet-whitelist/blob/main/whitelist.txt)
 
 # У меня перестал работать WireGuard
 
