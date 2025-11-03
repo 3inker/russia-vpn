@@ -101,10 +101,7 @@ Vless клиенты имеются для всех платформ, с их н
 
 # У меня перестала работать 3x-ui панель
 
-РКН начал блокировать нестандартные http/https порты, вы можете восстановить работу панели подключившись к серверу по [SSH](https://wiki.yukikras.net/ru/kak-podklyuchitsya-po-ssh-i-sftp) и введя следующую команду в консоли сервера:
-``` bash
-bash <(curl -Ls https://raw.githubusercontent.com/YukiKras/vless-scripts/refs/heads/main/3xuiportfix.sh)
-```
+В связи с последними ограничениями, доступ к панелям теперь осуществляется другим способом, с ним вы можете ознакомиться в следующей статье: https://github.com/YukiKras/wiki/blob/main/ssh-tunnels.md
 
 # У меня перестал работать Vless ключ в 3x-ui панели
 
