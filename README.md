@@ -5,7 +5,7 @@
 
 # Что произошло?
 
-РКН начал агрессивную блокировку нестандартных http портов, стандартные http порты которые не блокируются: `80`, `81`, `8080`, `443`, `8443`
+В некоторых регионах РКН начал блокировку Vless протокола, также нестандартных http портов, стандартные http порты которые не блокируются: `80`, `81`, `8080`, `443`, `8443`
 Также РКН начал активнее блокировать легкозасекаемые VPN протоколы и некоторые SNI/Dest
 
 # Оглавление
@@ -32,7 +32,11 @@
 
 [У меня перестал работать TorrServer](https://github.com/YukiKras/russia-vpn#%D1%83-%D0%BC%D0%B5%D0%BD%D1%8F-%D0%BF%D0%B5%D1%80%D0%B5%D1%81%D1%82%D0%B0%D0%BB-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%D1%82%D1%8C-torrserver)
 
-# Инструкция по смене SNI/Dest в 3x-ui панели
+# Не работает Vless протокол не смотря на настройки SNI
+
+Рекомендую перейти на Hysteria2 протокол следуя этой инструкции: https://github.com/YukiKras/wiki/blob/main/hysteria2-install.md
+
+Также можно попробовать убрать SNI, в некоторых случаях помогает, это можно сделать следующим образом:
 
 Для этого войдите в 3x-ui панель по инструкциям из [wiki.aeza.net](https://wiki.aeza.net/aezawiki/razvertyvanie-proksi-protokola-vless-s-pomoshyu-3x-ui#id-2.-vkhod-v-panel-3x-ui-i-sozdanie-klyucha-polzovatelya), далее перейдите во вкладку "Инбаунды" или если у вас старая панель 3x-ui во вкладку "Подключения"
 
@@ -48,21 +52,35 @@
 
 <img width="396" height="913" alt="waterfox_cM4oEt0zXZ" src="https://github.com/user-attachments/assets/55e4cd01-9cef-4e4f-9554-d10a31ad526f" />
 
+# Инструкция по смене SNI/Dest в 3x-ui панели
+
+Для этого войдите в 3x-ui панель по инструкциям из [wiki.aeza.net](https://wiki.aeza.net/aezawiki/razvertyvanie-proksi-protokola-vless-s-pomoshyu-3x-ui#id-2.-vkhod-v-panel-3x-ui-i-sozdanie-klyucha-polzovatelya), далее перейдите во вкладку "Инбаунды" или если у вас старая панель 3x-ui во вкладку "Подключения"
+
+<img width="1920" height="397" alt="waterfox_Nb8VT3xTfv" src="https://github.com/user-attachments/assets/720b8281-9158-4b26-ae5f-af2b6e9a9e06" />
+
+Далее нажмите на троеточее и кнопку изменения
+
+<img width="1920" height="676" alt="waterfox_7RkwyxAApN" src="https://github.com/user-attachments/assets/6498a722-dfdd-4508-bde7-9e975d9b354c" />
+
+<img width="348" height="465" alt="waterfox_wm48c0K53W" src="https://github.com/user-attachments/assets/e4b2904a-5737-482b-b332-d9877237863c" />
+
+Далее вам нужно тут просто стереть SNI
+
+<img width="523" height="1300" alt="waterfox_ieuu9ORmNN" src="https://github.com/user-attachments/assets/3f43a2b3-f8d5-41e2-af82-e806a38e2665" />
+
+
 > [!WARNING]  
-> В Target (или в Dest) всегда прописывайте :443 на конце, без пробелов
+> В Target (или в Dest) трогать не надо
 
 После этого сохраните изменения:
 
-<img width="406" height="913" alt="waterfox_mhoqBJw3Ba" src="https://github.com/user-attachments/assets/fc99ebe6-1300-4bc6-9472-e7d783d4b4ba" />
+<img width="531" height="1315" alt="waterfox_go5LZlxhu9" src="https://github.com/user-attachments/assets/65d247f5-7987-47f9-a764-b2f2c59ce058" />
 
 Если вы не настраивали подписку то вам необходимо будет скопировать Vless ключ и обновить его в вашем прокси клиенте, ниже показаны скриншоты как скопировать Vless ключ, с инструкциями по настройки прокси клиентов вы можете ознакомиться тут: https://wiki.yukikras.net/ru/nastroikavpn
 
 <img width="645" height="474" alt="waterfox_I5x66l6KZJ" src="https://github.com/user-attachments/assets/26307247-8e1c-418b-a249-b1c5328c3918" />
 
 <img width="614" height="926" alt="waterfox_lYUS1xxLJY" src="https://github.com/user-attachments/assets/8fbd4389-e942-4e00-a72f-83c9a7e57482" />
-
-> [!IMPORTANT]  
-> Если не заработало то попробуйте вписать другой SNI/Dest из [этого списка](https://github.com/hxehex/russia-mobile-internet-whitelist/blob/main/whitelist.txt)
 
 # Инструкция по смене SNI/Dest в Marzban панели
 
